@@ -7,6 +7,7 @@ This repository contains my daily practice and experiments while learning React 
 - Components
 - Event handling
 - Passing arguments to functions
+- Props
 
 ## How to Run Locally
 npm install  
