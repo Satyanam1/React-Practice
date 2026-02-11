@@ -1,31 +1,23 @@
-import React from 'react'
-import Rough from './rough';
-
+import React, { useState } from 'react'
+import Create from './components/Create'
+import Read from './components/Read'
 
 const App = () => {
 
-  const start = ()=>{
-    alert("Button clicked");
-    
-  }
-
-  const paramClick = (msg)=> alert(msg)
-    
-  
-
-
+  const [users, setuser] = useState([
+    { name: "satyam", age: 22 },
+    { name: "shubham", age: 24 },
+    { name: "Rohit", age: 22 }
+  ])
   
   return (
-   <>
-  
-    <h1>Welcome to React js</h1>
-    <button onClick={start}>Click</button>
-    <button onClick={()=> paramClick("hello satyam, How are you?")}>Click para</button>
-    <Rough/>
-   </>
+    <>
+      
+    <Create/>
+    <Read users={users} setuser={setuser} />
+      
+    </>
   )
 }
 
 export default App
-
-
