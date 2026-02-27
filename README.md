@@ -12,6 +12,10 @@ This repository contains my daily practice and experiments while learning React 
   - useState
   - useEffect
   - useNavigate
+  - useContext
+  - useMemo
+  - useCallback
+## axios
 
 ## How to Run Locally
 npm install  
